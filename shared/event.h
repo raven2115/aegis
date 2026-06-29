@@ -40,5 +40,4 @@ typedef struct {
     Payload payload; //payload
 } Event;
 
-
 #endif /* EVENT_H */

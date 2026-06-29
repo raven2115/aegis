@@ -10,8 +10,6 @@ typedef enum {
     SOURCE_ELFParser,
     SOURCE_Plugin
 } EventSource;
-<<<<<<< HEAD
+
 #endif
-=======
-#endif /* EVENT_SOURCE_H */
->>>>>>> 0418b16 (poczatek loggera, config i poprawki)
+
