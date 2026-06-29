@@ -6,8 +6,8 @@ typedef enum {
     SOURCE_Kernel,
     SOURCE_Sandbox,
     SOURCE_Network,
-    SOMemory,
-    ELFParser,
-    Plugin
+    SOURCE_Memory,
+    SOURCE_ELFParser,
+    SOURCE_Plugin
 } EventSource;
 #endif
