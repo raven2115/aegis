@@ -4,7 +4,7 @@
 typedef enum {
     EVENT_OPEN,       // Otwarcie pliku
     EVENT_EXEC,       // Uruchomienie procesu
-    EVENT)_CONNECT,    // Połączenie sieciowe
+    EVENT_CONNECT,    // Połączenie sieciowe
     EVENT_SANDBOX     // Uruchomienie sandboxa
 } EventType;
 
