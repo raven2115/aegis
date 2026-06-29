@@ -7,4 +7,6 @@ add_executable(Aegis
         shared/event.h
         shared/event_types.h
         shared/event_source.h
-        shared/severity.h)
+        shared/severity.h
+        logger/logger.c
+        logger/logger.h)

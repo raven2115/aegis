@@ -11,13 +11,6 @@
 /* Informacje o evencie */
 
 typedef struct {
-    EventHeader event_header; //naglowek eventu
-    EventTime event_time; //czas wystapienia eventu
-    ProcessInfo process_info; //informacje o procesie
-    Payload payload; //payload
-} Event;
-
-typedef struct {
     EventType event_type; // Typ eventu (EXEC, OPEN, CONNECT itd.) - co się wydarzyło?
     Severity severity_level; // Poziom ważności (INFO, LOW, MEDIUM, HIGH, CRITICAL)
     EventSource event_source; // Źródło eventu (kernel, network, sandbox itd.)
@@ -39,5 +32,13 @@ typedef struct {
 typedef struct {
     int change_this;
 } Payload;
+
+typedef struct {
+    EventHeader event_header; //naglowek eventu
+    EventTime event_time; //czas wystapienia eventu
+    ProcessInfo process_info; //informacje o procesie
+    Payload payload; //payload
+} Event;
+
 
 #endif /* EVENT_H */

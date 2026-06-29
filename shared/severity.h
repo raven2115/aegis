@@ -9,4 +9,4 @@ typedef enum {
     HIGH,
     CRITICAL
 } Severity;
-#endif
+#endif /* SEVERITY_H */
