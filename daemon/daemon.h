@@ -5,8 +5,9 @@
 #include "../shared/event.h"
 #include "../logger/logger.h"
 #include "../shared/utils.h"
-
-
+#include "../logger/logger.h"
+#include "event_bus.h"
+#include "event_queue.h"
 
 void Daemon_init();
 void Daemon_run();

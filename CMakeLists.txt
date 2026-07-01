@@ -10,6 +10,8 @@ add_executable(Aegis
         daemon/daemon.h
         daemon/event_bus.c
         daemon/event_bus.h
+        daemon/event_queue.c
+        daemon/event_queue.h
         shared/event.h
         shared/event.c
         shared/event_types.h

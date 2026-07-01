@@ -1,16 +1,15 @@
 #include "daemon.h"
-#include "../logger/logger.h"
-#include "event_bus.h"
 
 typedef struct {
     Logger logger;
     EventBus bus;
-    Event event;
+    EventQueue event_queue;
 } Daemon;
 
 void Daemon_init(Daemon *daemon) {
     Logger_init(&daemon->logger, PATH_LOGS_FOLDER);
     EventBus_init(&daemon->bus);
+    EventQueue_init(&daemon->event_queue);
     printf("[+] [%s] Daemon initialised", Timestamp_format(time(NULL)));
 }
 

@@ -6,5 +6,6 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <unistd.h>
+#include <stdbool.h>
 
 #endif /* COMMON_H */
