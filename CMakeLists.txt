@@ -17,5 +17,7 @@ add_executable(Aegis
         shared/severity.h
         shared/config.h
         shared/common.h
+        shared/utils.c
+        shared/utils.h
         logger/logger.c
         logger/logger.h)

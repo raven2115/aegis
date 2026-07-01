@@ -2,5 +2,9 @@
 #define COMMON_H
 
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <unistd.h>
 
 #endif /* COMMON_H */

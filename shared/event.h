@@ -1,12 +1,11 @@
 #ifndef EVENT_H
 #define EVENT_H
 
-#include <stdint.h>
-#include <unistd.h>
-
+#include "common.h"
 #include "severity.h"
 #include "event_source.h"
 #include "event_types.h"
+#include "utils.h"
 
 /* Informacje o evencie */
 
@@ -18,7 +17,7 @@ typedef struct {
 
 /* Czas wystąpienia eventu */
 typedef struct {
-    uint64_t unix_sec; // Liczba sekund od 1.01.1970 (Unix timestamp)
+    uint64_t timestamp_raw;// Liczba sekund od 1.01.1970 (Unix timestamp)
 } EventTime;
 
 /* Podstawowe informacje o procesie */

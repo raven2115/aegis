@@ -4,6 +4,9 @@
 #include "../shared/common.h"
 #include "../shared/event.h"
 #include "../logger/logger.h"
+#include "../shared/utils.h"
+
+
 
 void Daemon_init();
 void Daemon_run();
