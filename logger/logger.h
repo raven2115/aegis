@@ -1,7 +1,9 @@
 #ifndef LOGGER_H
 #define LOGGER_H
+
 #include "../shared/config.h"
 #include "../shared/event.h"
+#include "../shared/common.h"
 
 typedef struct {
     char log_path[PATH_LENGTH]; //sciezka do pliku loga gdzie bedziemy wpisywac (PATH_LENGTH = 256 z configu)
