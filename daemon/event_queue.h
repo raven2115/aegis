@@ -4,10 +4,9 @@
 #include "../shared/common.h"
 #include "../shared/event.h"
 #include "../shared/config.h"
-#include "../shared/utils.h"
 
 typedef struct {
-    Event events[QUEUE_MAX_SIZE];
+    Event queue[QUEUE_MAX_SIZE];
     int head;
     int tail;
     int count;

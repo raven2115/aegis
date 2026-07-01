@@ -11,3 +11,17 @@ char* Timestamp_format(time_t timestamp_raw) {
     return buffer;
 }
 
+bool IsInArray_char(char* array[], int element_count, char target[]) {
+    int matches = 0;
+    for (int i=0; i<element_count; i++){
+        if (strcmp(array[i], target) == 0) {
+            matches = 1;
+            break;
+        }
+    }
+    if (matches == 0) {
+        return false;
+    } else {
+        return true;
+    }
+}

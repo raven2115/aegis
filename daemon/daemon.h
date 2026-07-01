@@ -5,11 +5,17 @@
 #include "../shared/event.h"
 #include "../logger/logger.h"
 #include "../shared/utils.h"
-#include "../logger/logger.h"
 #include "event_bus.h"
 #include "event_queue.h"
+#include "../shared/subscriber.h"
 
-void Daemon_init();
+typedef struct {
+    Logger logger;
+    EventBus bus;
+    EventQueue event_queue;
+} Daemon;
+
+void Daemon_init(Daemon *daemon);
 void Daemon_run();
 void Daemon_destroy();
 

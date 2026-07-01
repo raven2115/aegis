@@ -7,5 +7,6 @@
 #include <stdint.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include <string.h>
 
 #endif /* COMMON_H */
