@@ -14,7 +14,8 @@ typedef struct {
 } EventBus;
 
 void EventBus_init(EventBus* bus);
-void Publish(EventBus* bus, EventQueue event_queue);
-void EventBus_Subscribe(EventBus* bus, Subscriber* subscriber);
+void EventBus_Publish(EventBus* bus, EventQueue *event_queue);
+void EventBus_Subscribe(EventBus* bus, Subscriber* subscriber, int id);
+void EventBus_Check(EventBus* bus);
 
 #endif /* EVENT_BUS_H */

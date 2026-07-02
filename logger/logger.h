@@ -14,7 +14,7 @@ typedef struct {
 } Logger;
 
 void Logger_init(Logger* logger, const char* logs_folder);
-void Logger_log(Logger* logger, const char* message);
+void Logger_log(Logger* logger, Event* event);
 void Logger_destroy(Logger* logger);
 void Logger_Callback(Event* event); //callback loggera jak dostanie event od event busa
 

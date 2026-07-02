@@ -7,16 +7,16 @@
 
 typedef struct {
     Event queue[QUEUE_MAX_SIZE];
-    int head;
-    int tail;
-    int count;
+    int head; //miejsce nastepnego odczytu
+    int tail; //miejsce nastepnego zapisu
+    int count; //liczba elementow
 } EventQueue;
 
 void EventQueue_init(EventQueue *event_queue);
 void Push_event(EventQueue *event_queue, Event event);
-void Pop_event(EventQueue *event_queue, Event event);
-bool Is_queue_empty(EventQueue *event_queue);
+Event Read_event(EventQueue *event_queue);
+bool IsQueueEmpty(EventQueue *event_queue);
 int Queue_size(EventQueue *event_queue);
-void Queue_clear(EventQueue *event_queue);
+
 
 #endif /* EVENT_QUEUE_H */

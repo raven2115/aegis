@@ -6,7 +6,9 @@ void Daemon_init(Daemon *daemon) {
     EventBus_init(&daemon->bus);
     EventQueue_init(&daemon->event_queue);
     //subskrybowanie event busa
-    EventBus_Subscribe(&daemon->bus, &daemon->logger.subscriber);
+    EventBus_Subscribe(&daemon->bus, &daemon->logger.subscriber, 0);
+    //sanity checki (zeby zobaczyc czy wszystko dziala)
+    EventBus_Check(&daemon->bus);
     printf("[+] [%s] Daemon initialised", Timestamp_format(time(NULL)));
 }
 
